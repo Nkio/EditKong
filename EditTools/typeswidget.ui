@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TypesWidget</class>
+ <widget class="QWidget" name="TypesWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QToolBox" name="Player">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="PlayerWidget" name="player">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>378</width>
+        <height>123</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Player</string>
+      </attribute>
+     </widget>
+     <widget class="BlocksWidget" name="blocks">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>378</width>
+        <height>123</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Blocks</string>
+      </attribute>
+     </widget>
+     <widget class="EnemiesWidget" name="enemies">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>378</width>
+        <height>123</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Enemies</string>
+      </attribute>
+     </widget>
+     <widget class="TargetWidget" name="target">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>378</width>
+        <height>123</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Target</string>
+      </attribute>
+     </widget>
+     <widget class="FinalBlockWidget" name="finalblock">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>378</width>
+        <height>123</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Final block</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlayerWidget</class>
+   <extends>QWidget</extends>
+   <header>playerwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlocksWidget</class>
+   <extends>QWidget</extends>
+   <header>blockswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EnemiesWidget</class>
+   <extends>QWidget</extends>
+   <header>enemieswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FinalBlockWidget</class>
+   <extends>QWidget</extends>
+   <header>finalblockwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TargetWidget</class>
+   <extends>QWidget</extends>
+   <header>targetwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
