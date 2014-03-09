@@ -1,0 +1,45 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel} 
+\usepackage{url} % Pour écrire des adresses cliquables.
+\usepackage{lmodern} % Pour changer le pack de police.
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{grffile}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{eso-pic}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[a4paper]{geometry}
+
+\usepackage{graphicx}
+
+\graphicspath{{Images/}}
+\DeclareGraphicsExtensions{.png ,.jpg}
+\title{Specification}
+\author{\textsc{EditKong Team}}
+\date{\today} % Pour mettre la date du jour, tapez \today.
+
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+
+\vfill
+}}}
+
+\renewcommand{\thepage}{}
+
+\begin{document}
+
+\AddToShipoutPicture{\BackgroundPic}
+\maketitle
+
+\input{abstract.tex}
+\input{information.tex}
+
+\end{document}
