@@ -4,9 +4,32 @@
 
 \section{Introdution}
 
+Here is a list of all interactions that user can have with the map editor :
+
+\begin{center}
+	\definecolor{LightGrey}{rgb}{0.8,0.8,0.8}
+	\begin{tabular}{| c | c | c |}
+			\hline \rowcolor{LightGrey} Interaction & User & System \\
+			\hline Click for new map & X &  \\
+			\hline Click for load map & X &  \\
+			\hline Click for save map & X &  \\
+			\hline Create new block type & X &  \\
+			\hline Edit block type & X &  \\
+			\hline Delete block from map & X &  \\
+			\hline Put block in map & X &  \\
+			\hline Move block from map & X &  \\
+			\hline Write Json file & & X \\
+			\hline Display map & & X \\
+			\hline Display tools box & & X \\
+			\hline
+	\end{tabular}
+\end{center}
+
 \section{Detailed interactions}
 \subsection{User : Create new map}
 	\begin{itemize}
+	
+	
 		\item Inputs:
 			\begin{itemize}
 				\item Click on creation button
@@ -26,6 +49,188 @@
 						\item Wrong size error
 						\item Empty name error
 						\item Invalid name map error
+					\end{itemize}
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Load map}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Click on load button
+				\item Choose the map to open
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Diplaying the map in the editor
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item Displaying error messages in alert box
+					\begin{itemize}
+						\item Wrong type of file error
+						\item Wrong Json format error
+					\end{itemize}
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Save map}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Click on save button
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Diplaying the success message in alert box
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item Displaying error messages in alert box
+					\begin{itemize}
+						\item File access error
+					\end{itemize}
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Create new block type}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Click on '+' button in the block type dock
+				\item Fill block name in dialog box
+				\item Fill sprite in browser box
+				\item Customize your block actions using checkbox
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Diplaying the new block in the block dock
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item Displaying error messages in alert box
+					\begin{itemize}
+						\item Wrong sprite error
+						\item Conflicting action error
+						\item Block name empty error
+					\end{itemize}
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Edit block type}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Select a block and click edit button
+				\item Edit the block
+				\item Click save button
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Diplaying the modified block in the block dock
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item Displaying error messages in alert box
+					\begin{itemize}
+						\item Wrong sprite error
+						\item Conflicting action error
+						\item Block name empty error
+					\end{itemize}
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Delete block from map}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Click on the delete button mode
+				\item Confirm your choice by clicking Yes button
+				\item Click on the block to delete
+				\item Click back on the delete button mode to exit delete mode
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Delete the block from the map
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item No failure case
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Put block in map}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Select a block from the block dock
+				\item Click on the wanted cell in the map
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Diplaying the block in the map
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item Displaying error messages in alert box
+					\begin{itemize}
+						\item Cell already taken error
+					\end{itemize}
+					\end{itemize}
+				\end{itemize}
+	\end{itemize}
+	
+\subsection{User : Move block from map}
+	\begin{itemize}
+	
+	
+		\item Inputs:
+			\begin{itemize}
+				\item Right click on the wanted cell in the map
+				\item Choose "Move" in the option
+				\item Click on the wanted cell in the map to move
+			\end{itemize}
+			\item Outputs:
+				\begin{itemize}
+					\item If success:					
+					\begin{itemize}
+						\item Block display in the wanted cell
+					\end{itemize}
+					\item If fail:
+					\begin{itemize}
+					\item Displaying error messages in alert box
+					\begin{itemize}
+						\item Cell already taken error
 					\end{itemize}
 					\end{itemize}
 				\end{itemize}
